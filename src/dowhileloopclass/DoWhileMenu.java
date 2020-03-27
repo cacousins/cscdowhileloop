@@ -23,16 +23,23 @@ public class DoWhileMenu {
 
         do {
             //create the menu for the app
+            System.out.println("");
             System.out.println("Calulator Program");
             System.out.println("1. Addition");
             System.out.println("2. Multiplication");
             System.out.println("3. Division");
             System.out.println("4. Substraction");
-            System.out.println("choose an opion, 0 to exit");
+            System.out.print("choose an opion, 0 to exit: ");
             choice = input.nextInt();
 
         } while (choice < 0 || choice > 4);
 
+        /*
+        based on the correct choice the use 
+        would be directed to the switch
+         if the user enters a 1. then the switch(1)
+        would run the addition method
+        */
         switch (choice) {
             case 1:
                 System.out.println("Addition");
